@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Tic Tac Toe Game</title>
+    <meta name="description" content="A fun and interactive Tic Tac Toe game with celebrations and audio effects.">
+    <meta name="theme-color" content="#00d4ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Tic Tac Toe">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="ICONS/icon-192.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <img src="ICONS/icon-192.png" alt="Tic Tac Toe Icon" class="splash-icon">
+            <h1 class="splash-title">Tic Tac Toe</h1>
+            <div class="splash-loading">Loading...</div>
+        </div>
+    </div>
+
+    <div id="choose-side-screen" class="choose-side-screen hide">
+        <div class="choose-wrapper">
+            <button id="sound-toggle" class="sound-toggle-top">🔊</button>
+            <h2>Choose Your Side</h2>
+            <div class="symbol-selection">
+                <button class="symbol-btn" id="choose-o" data-symbol="O">O</button>
+                <button class="symbol-btn" id="choose-x" data-symbol="X">X</button>
+            </div>
+            <button id="start-game-btn-2">Start Game</button>
+        </div>
+    </div>
+
+    <div id="game-screen" class="game-screen hide">
+        <main>
+            <h1>Tic Tac Toe</h1>
+            <div class="players-display">
+                <div class="player-info">
+                    <span id="player1-display">O</span>
+                </div>
+                <div class="vs">VS</div>
+                <div class="player-info">
+                    <span id="player2-display">X</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="game">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="reset-button">Reset Game</button>
+                <button id="game-end-button">Game End</button>
+                <button id="sound-toggle-game" class="sound-toggle">🔊</button>
+            </div>
+        </main>
+    </div>
+
+    <div class="msg-box hide">
+        <div id="trophy" class="trophy hide">🏆</div>
+        <div class="winner-announcement">
+            <div id="congratulations-text" class="congratulations-text">CONGRATULATION</div>
+            <div id="winner-name-display" class="winner-name-display"></div>
+        </div>
+        <p id="msg">WINNER</p>
+        <div id="sympathy" class="sympathy hide">😔 Better luck next time!</div>
+        <button id="new-button">New Game</button>
+    </div>
+    <div id="stars-container" class="stars-container hide"></div>
+    <div id="squares-container" class="squares-container hide"></div>
+    <div id="ribbons-container" class="ribbons-container hide"></div>
+    <div id="confetti-container" class="confetti-container hide"></div>
+    <div id="flowers-container" class="flowers-container hide"></div>
+    <div id="firecracker-container" class="firecracker-container hide"></div>
+
+</body>
+<script src="my.js"></script>
+
+</html>
